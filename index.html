@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     <!-- vuejs -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Vue Hello</title>
   </head>
   <body>
 
-    <header id="main_title">
+    <header>
       <h1>{{ title }}</h1>
     </header>
 
     <main>
       <div class="image">
-        <img src="" alt="">
+        <img :src="myImage" alt="foto panorama">
       </div>
     </main>
+    
   <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

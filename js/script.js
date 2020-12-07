@@ -1,10 +1,20 @@
 // Con Vue, stampare a schermo un messaggio all’interno di un h1, utilizzando i data.
 // Bonus: Aggiungere un’immagine presa anch’essa da un data.
-var app = new Vue(
+var header = new Vue(
  {
-   el: '#main_title',
+   el: 'header',
    data: {
-     title: "Hello Word!"
+     title: "Hello Word!",
+     myImage: "img/img01.jpg"
+   },
+ }
+);
+
+var main = new Vue(
+ {
+   el: 'main',
+   data: {
+     myImage: "img/img01.jpg"
    },
  }
 );
